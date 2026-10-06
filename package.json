@@ -1,0 +1,30 @@
+{
+  "name": "dsh-time-context",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Temporal grounding for DSH models: injects exact current local time and previous-message recency into every prompt via the native runtime-context snapshot",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    "lib/index.js",
+    "cordis.patch.yml",
+    "package.json",
+    "README.md"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JessenReinhart/dsh-time-context.git"
+  }
+}

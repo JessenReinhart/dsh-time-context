@@ -1,0 +1,5 @@
+# dsh-time-context bundle patch
+# Mounts the temporal-grounding plugin into the host composition
+- insert:
+    - id: time-context
+      name: 'dsh-time-context'
